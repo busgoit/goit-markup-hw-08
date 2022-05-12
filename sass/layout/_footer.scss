@@ -1,0 +1,23 @@
+.footer {
+  // padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: getColor('footerBgr');
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: getColor('secondaryBrand');
+
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
+
+  text-transform: uppercase;
+}

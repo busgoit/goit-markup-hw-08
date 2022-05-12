@@ -1,0 +1,63 @@
+.peculiarity .container {
+  @media screen and (min-width: $tablet) {
+  }
+}
+
+.peculiarity {
+  &__list {
+    @include list();
+
+    @media screen and (min-width: $tablet) {
+      @include flexWrap();
+      margin: -15px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: $pre_tablet) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__box {
+    @include centeredFlex();
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: getColor('secondaryBgr');
+    border-radius: 4px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include font(700, 14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+    color: getColor('mainText');
+
+    @media screen and (max-width: $pre_tablet) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    @include font(400, 14px, 1.72, 0.03em);
+
+    color: getColor('secondaryText');
+  }
+}

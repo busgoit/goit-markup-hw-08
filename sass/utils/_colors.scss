@@ -1,0 +1,27 @@
+$colors: (
+  'brand': #2196f3,
+  'secondaryBrand': #fff,
+  'mainText': #212121,
+  'secondaryText': #757575,
+  'logoText': #000,
+  'placeholderText': rgba(117, 117, 117, 0.5),
+  'conteinerBgr': #eee,
+  'mainBgr': #fff,
+  'secondaryBgr': #f5f4fa,
+  'worksBgr': rgba(47, 48, 58, 0.8),
+  'footerBgr': #2f303a,
+  'footerSocialsBgr': rgba(255, 255, 255, 0.1),
+  'modalBgr': rgba(0, 0, 0, 0.2),
+  'overlayBgr': rgba(33, 150, 243, 0.9),
+  'aktiveBtn': #188ce8,
+  'portfolioBtn': #f5f4fa,
+  'headerLine': #ececec,
+  'footerContacts': rgba(255, 255, 255, 0.6),
+  'mainSocials': #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+//   color: getColor('primary');

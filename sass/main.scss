@@ -1,0 +1,59 @@
+@import './utils/colors';
+@import './utils/variables';
+@import './utils/breakpoints';
+// @import './base/modern-normalize';
+// @import './utils/placeholders';
+@import './utils/mixins';
+@import './layout/body';
+@import './base/visually-hidden';
+@import './layout/section';
+@import './layout/container';
+/* 
+=========== стили шапки 
+*/
+// @import './layout/header';
+// @import './components/logo';
+// @import './components/site-nav';
+// @import './components/header-contacts';
+/* 
+=========== стили героя
+*/
+@import './layout/hero';
+// @import './components/hero-btn';
+/* 
+=========== особенности
+*/
+@import './layout/peculiarity';
+/* 
+=========== чем мы занимаемся
+*/
+@import './components/section-title';
+@import './layout/our-works';
+/* 
+=========== наша команда
+*/
+// @import './layout/team';
+// @import './components/soc-list';
+/* 
+=========== наши клиенты
+*/
+@import './layout/clients';
+/* 
+=========== футер
+*/
+// @import './layout/footer';
+// @import './components/footer-address';
+// @import './components/footer-soc-list';
+// @import './components/footer-subscribe';
+/* 
+=========== модальное окно
+*/
+// @import './components/backdrop';
+// @import './components/modal';
+// @import './components/form';
+/* 
+=========== портфолио
+*/
+// @import './layout/portfolio';
+// @import './components/portfolio-filter-btn';
+// @import './components/portfolio-project-card';

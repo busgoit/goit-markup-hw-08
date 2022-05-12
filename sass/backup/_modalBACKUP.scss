@@ -1,0 +1,47 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  background-color: getColor('mainBgr');
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include centeredFlex();
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-color: getColor('mainBgr');
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: getColor('brand');
+  }
+}
+
+.modal__close-icon {
+  fill: currentColor;
+}

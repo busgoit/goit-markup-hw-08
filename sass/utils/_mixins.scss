@@ -1,0 +1,28 @@
+@mixin list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  // overflow: hidden;
+}
+
+@mixin link() {
+  text-decoration: none;
+}
+
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexWrap() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

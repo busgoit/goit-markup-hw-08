@@ -1,0 +1,61 @@
+.footer__subscribe {
+  margin-top: 72px;
+}
+
+.subscribe__form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe__mail {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 1.25;
+  // letter-spacing: 0.03em;
+  @include font(400, 16px, 1.72, 0.03em);
+
+  color: getColor('footerContacts');
+
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.subscribe__btn {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include centeredFlex();
+  width: 200px;
+  height: 50px;
+
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
+  @include font(700, 16px, 1.88, 0.06em);
+
+  color: getColor('secondaryBrand');
+  background: getColor('brand');
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: getColor('aktiveBtn');
+    cursor: pointer;
+  }
+}
+
+.subscribe__text {
+  margin-right: 10px;
+}

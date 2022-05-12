@@ -1,0 +1,21 @@
+/* секция фильтр */
+
+.portfolio__filter-list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio__filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* проекты */
+
+.portfolio__projects-list {
+  @extend %list;
+  // display: flex;
+  // flex-wrap: wrap;
+  @include flexWrap();
+}
