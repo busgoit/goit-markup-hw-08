@@ -1,7 +1,10 @@
 .hero {
-  padding: 118px 60px;
-  width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
   height: 400px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: getColor('footerBgr');
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -11,12 +14,15 @@
   background-size: cover;
 
   @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   &__title {
@@ -24,11 +30,11 @@
     margin-bottom: 30px;
     @include font(900, 26px, 1.62, 0.06em);
 
-    color: getColor('secondaryBrand');
     text-align: center;
     text-transform: uppercase;
+    color: getColor('secondaryBrand');
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
       @include font(900, 44px, 1.36, 0.06em);
     }
   }

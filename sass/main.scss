@@ -1,7 +1,7 @@
 @import './utils/colors';
 @import './utils/variables';
 @import './utils/breakpoints';
-// @import './base/modern-normalize';
+@import './base/modern-normalize';
 // @import './utils/placeholders';
 @import './utils/mixins';
 @import './layout/body';
@@ -19,7 +19,7 @@
 =========== стили героя
 */
 @import './layout/hero';
-// @import './components/hero-btn';
+@import './components/hero-btn';
 /* 
 =========== особенности
 */
