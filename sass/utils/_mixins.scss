@@ -9,6 +9,12 @@
   text-decoration: none;
 }
 
+@mixin img() {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 @mixin centeredFlex($type: flex) {
   display: $type;
   align-items: center;
