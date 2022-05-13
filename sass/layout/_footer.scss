@@ -2,8 +2,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  text-align: center;
-
   background-color: getColor('footerBgr');
 
   &__title {
@@ -14,6 +12,10 @@
     @include font(700, 14px, 1.14, 0.03em);
 
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: $pre_desktop) {
+    text-align: center;
   }
 
   @media screen and (min-width: $desktop) {

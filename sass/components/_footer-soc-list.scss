@@ -5,6 +5,10 @@
     display: inline-block;
     vertical-align: top;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 // .footer__soc-list {
 //   margin-top: 72px;
