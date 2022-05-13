@@ -15,4 +15,10 @@
 
     text-transform: uppercase;
   }
+
+  @media screen and (min-width: $desktop) {
+    &__container {
+      display: flex;
+    }
+  }
 }

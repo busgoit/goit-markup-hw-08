@@ -1,6 +1,18 @@
 .footer__address-meta {
-  margin-bottom: 60px;
   @include font(400, 14px, 1.72, 0.03em);
+
+  @media screen and (max-width: $pre_desktop) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pre_desktop) {
+    display: inline-block;
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .footer__address {

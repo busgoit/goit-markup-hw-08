@@ -1,5 +1,10 @@
 .footer__soc-list {
   margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) and (max-width: $pre_desktop) {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 // .footer__soc-list {
 //   margin-top: 72px;

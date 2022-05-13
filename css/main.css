@@ -774,13 +774,35 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .footer__address-meta {
-  margin-bottom: 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .footer__address-meta {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__address-meta {
+    display: inline-block;
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address-meta {
+    margin-right: 70px;
+  }
 }
 
 .footer__address {
@@ -819,6 +841,12 @@ body {
 .footer__soc-list {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__soc-list {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
 
 .footer__soc-list-link {
   color: #fff;
@@ -854,6 +882,11 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__mail {
+    width: 450px;
+  }
 }
 
 .subscribe__btn {
