@@ -1,22 +1,24 @@
 .logo {
-  @extend %link;
-  display: inline-block;
+  @include link;
+  display: block;
 
   font-family: $secondary-font-family;
-
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
-  @include font(700, 26px, 1.19, 0.03em);
-
+  @include font(700, 24px, 1.16, 0.03em);
   color: getColor('logoText');
-}
 
-.logo__accent {
-  color: getColor('brand');
-}
+  @media screen and (min-width: $desktop) {
+    @include font(700, 26px, 1.19, 0.03em);
+  }
 
-.logo__text--footer {
-  color: getColor('secondaryBrand');
+  &__accent {
+    color: getColor('brand');
+  }
+
+  &--footer {
+    margin-bottom: 20px;
+  }
+
+  &__text--footer {
+    color: getColor('secondaryBrand');
+  }
 }

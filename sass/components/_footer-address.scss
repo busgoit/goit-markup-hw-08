@@ -1,18 +1,11 @@
 .footer__address-meta {
-  margin-top: 60px;
-  margin-right: 70px;
+  @include font(400, 14px, 1.72, 0.03em);
 }
 
 .footer__address {
-  margin-top: 20px;
-  color: getColor('secondaryBrand');
-
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.72;
-  // letter-spacing: 0.03em;
-  @include font(400, 14px, 1.72, 0.03em);
+  margin-bottom: 8px;
   font-style: normal;
+  color: getColor('secondaryBrand');
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -24,22 +17,16 @@
 }
 
 .footer__contact-list {
-  @extend %list;
+  @include list;
 }
 
-.footer__contact-item {
-  margin-top: 9px;
+.footer__contact-item:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .footer__contact-link {
-  @extend %link;
+  @include link;
   color: getColor('footerContacts');
-
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.72;
-  // letter-spacing: 0.03em;
-  @include font(400, 14px, 1.72, 0.03em);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

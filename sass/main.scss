@@ -12,7 +12,7 @@
 =========== стили шапки 
 */
 // @import './layout/header';
-// @import './components/logo';
+@import './components/logo';
 // @import './components/site-nav';
 // @import './components/header-contacts';
 /* 
@@ -33,7 +33,7 @@
 =========== наша команда
 */
 @import './layout/team';
-// @import './components/soc-list';
+@import './components/soc-list';
 /* 
 =========== наши клиенты
 */
@@ -41,8 +41,8 @@
 /* 
 =========== футер
 */
-// @import './layout/footer';
-// @import './components/footer-address';
+@import './layout/footer';
+@import './components/footer-address';
 // @import './components/footer-soc-list';
 // @import './components/footer-subscribe';
 /* 
