@@ -1,4 +1,4 @@
-.footer__address-meta {
+.footer__address {
   @include font(400, 14px, 1.72, 0.03em);
 
   @media screen and (max-width: $pre_desktop) {
@@ -13,39 +13,39 @@
   @media screen and (min-width: $desktop) {
     margin-right: 70px;
   }
-}
 
-.footer__address {
-  margin-bottom: 8px;
-  font-style: normal;
-  color: getColor('secondaryBrand');
+  &__address-meta {
+    margin-bottom: 8px;
+    font-style: normal;
+    color: getColor('secondaryBrand');
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: getColor('brand');
-    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: getColor('brand');
+      cursor: pointer;
+    }
   }
-}
 
-.footer__contact-list {
-  @include list;
-}
+  &__contact-list {
+    @include list;
+  }
 
-.footer__contact-item:not(:last-child) {
-  margin-bottom: 8px;
-}
+  &__contact-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
 
-.footer__contact-link {
-  @include link;
-  color: getColor('footerContacts');
+  &__contact-link {
+    @include link;
+    color: getColor('footerContacts');
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: getColor('brand');
-    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: getColor('brand');
+      cursor: pointer;
+    }
   }
 }

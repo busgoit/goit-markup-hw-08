@@ -4,6 +4,17 @@
 
   background-color: getColor('footerBgr');
 
+  @media screen and (max-width: $pre_desktop) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &__container {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 20px;
@@ -12,15 +23,5 @@
     @include font(700, 14px, 1.14, 0.03em);
 
     text-transform: uppercase;
-  }
-
-  @media screen and (max-width: $pre_desktop) {
-    text-align: center;
-  }
-
-  @media screen and (min-width: $desktop) {
-    &__container {
-      display: flex;
-    }
   }
 }

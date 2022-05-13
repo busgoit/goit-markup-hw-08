@@ -1,5 +1,7 @@
 .footer__soc-list {
-  margin-bottom: 60px;
+  @media screen and (max-width: $pre_tablet) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: $tablet) and (max-width: $pre_desktop) {
     display: inline-block;
@@ -10,21 +12,6 @@
     margin-right: 93px;
   }
 }
-// .footer__soc-list {
-//   margin-top: 72px;
-//   margin-right: 93px;
-// }
-
-// .footer__soc-list-link {
-//   color: getColor('secondaryBrand');
-//   background-color: getColor('footerSocialsBgr');
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     background-color: getColor('brand');
-//   }
-// }
 
 .footer__soc-list-link {
   color: getColor('secondaryBrand');
