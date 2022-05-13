@@ -16,9 +16,9 @@
 
   &--footer {
     margin-bottom: 20px;
-  }
 
-  &__text--footer {
-    color: getColor('secondaryBrand');
+    &__text {
+      color: getColor('secondaryBrand');
+    }
   }
 }

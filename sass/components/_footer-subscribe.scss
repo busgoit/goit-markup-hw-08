@@ -1,23 +1,26 @@
 .footer__subscribe {
-  margin-top: 72px;
 }
 
 .subscribe__form {
-  display: flex;
-  align-items: center;
+  @media screen and (max-width: $pre_tablet) {
+    @include flexWrap();
+  }
+
+  @media screen and (min-width: $tablet) {
+    // display: flex;
+    // align-items: center;
+  }
 }
 
 .subscribe__mail {
-  width: 358px;
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
   padding: 15px 16px;
+  margin-bottom: 20px;
 
-  // font-weight: 400;
-  // font-size: 16px;
-  // line-height: 1.25;
-  // letter-spacing: 0.03em;
-  @include font(400, 16px, 1.72, 0.03em);
+  @include font(400, 16px, 1.25, 0.03em);
+
+  // @include font(400, 16px, 1.72, 0.03em);
 
   color: getColor('footerContacts');
 
@@ -28,17 +31,12 @@
 }
 
 .subscribe__btn {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   @include centeredFlex();
   width: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 1.88;
-  // letter-spacing: 0.06em;
   @include font(700, 16px, 1.88, 0.06em);
 
   color: getColor('secondaryBrand');

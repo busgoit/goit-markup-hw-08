@@ -5,4 +5,14 @@
   text-align: center;
 
   background-color: getColor('footerBgr');
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: getColor('secondaryBrand');
+
+    @include font(700, 14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+  }
 }
