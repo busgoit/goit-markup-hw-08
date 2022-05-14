@@ -268,52 +268,54 @@
     <footer class="footer">
       <div class="footer__container container">
         <h2 class="visually-hidden">Адрес и социальные сети</h2>
-        <div class="footer__address-meta">
-          <a href="./index.html" title="Главная страница WebStudio" class="logo"
-            ><span class="logo__accent">Web</span><span class="logo__text--footer">Studio</span>
-          </a>
-          <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="footer__contact-list">
-            <li class="footer__contact-item">
-              <a href="mailto:info@example.com" class="footer__contact-link">info@example.com</a>
-            </li>
-            <li class="footer__contact-item">
-              <a href="tel:+380991111111" class="footer__contact-link">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__soc-list">
-          <p class="footer__title">Присоединяйтесь</p>
-          <ul class="soc-list">
-            <li class="soc-list__item">
-              <a href="#" class="soc-list__link footer__soc-list-link">
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a href="#" class="soc-list__link footer__soc-list-link">
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a href="#" class="soc-list__link footer__soc-list-link">
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a href="#" class="soc-list__link footer__soc-list-link">
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer__meta">
+          <div class="footer__address">
+            <a href="./index.html" title="Главная страница WebStudio" class="logo logo--footer"
+              ><span class="logo__accent">Web</span><span class="logo--footer__text">Studio</span>
+            </a>
+            <address class="footer__address-meta">г. Киев, пр-т Леси Украинки, 26</address>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <a href="mailto:info@example.com" class="footer__contact-link">info@example.com</a>
+              </li>
+              <li class="footer__contact-item">
+                <a href="tel:+380991111111" class="footer__contact-link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__soc-list">
+            <p class="footer__title">Присоединяйтесь</p>
+            <ul class="soc-list">
+              <li class="soc-list__item">
+                <a href="#" class="soc-list__link footer__soc-list-link">
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__item">
+                <a href="#" class="soc-list__link footer__soc-list-link">
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__item">
+                <a href="#" class="soc-list__link footer__soc-list-link">
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__item">
+                <a href="#" class="soc-list__link footer__soc-list-link">
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <form class="footer__subscribe">
           <p class="footer__title">Подпишитесь на рассылку</p>
@@ -327,7 +329,7 @@
               placeholder="E-mail"
             />
             <button type="submit" class="subscribe__btn">
-              <b class="subscribe__text">Подписаться</b>
+              <p class="subscribe__text">Подписаться</p>
               <svg class="soc-list__icon" width="24" height="24">
                 <use href="./images/icons.svg#telegram"></use>
               </svg>
@@ -336,6 +338,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

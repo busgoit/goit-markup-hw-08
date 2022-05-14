@@ -1,12 +1,11 @@
 .footer__address {
   @include font(400, 14px, 1.72, 0.03em);
 
-  @media screen and (max-width: $pre_desktop) {
+  @media screen and (max-width: $pre_tablet) {
     margin-bottom: 60px;
   }
 
   @media screen and (min-width: $tablet) and (max-width: $pre_desktop) {
-    display: inline-block;
     margin-right: 165px;
   }
 
@@ -14,7 +13,7 @@
     margin-right: 70px;
   }
 
-  &__address-meta {
+  &-meta {
     margin-bottom: 8px;
     font-style: normal;
     color: getColor('secondaryBrand');
@@ -27,16 +26,18 @@
       cursor: pointer;
     }
   }
+}
 
-  &__contact-list {
+.footer__contact {
+  &-list {
     @include list;
   }
 
-  &__contact-item:not(:last-child) {
+  &-item:not(:last-child) {
     margin-bottom: 8px;
   }
 
-  &__contact-link {
+  &-link {
     @include link;
     color: getColor('footerContacts');
 

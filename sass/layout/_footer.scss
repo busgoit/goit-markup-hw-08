@@ -8,10 +8,26 @@
     text-align: center;
   }
 
-  @media screen and (min-width: $desktop) {
-    &__container {
+  &__container {
+    @media screen and (min-width: $desktop) {
       display: flex;
       align-items: baseline;
+    }
+  }
+
+  &__meta {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    @media screen and (max-width: $pre_desktop) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: auto;
     }
   }
 
