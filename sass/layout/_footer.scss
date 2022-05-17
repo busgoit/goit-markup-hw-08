@@ -36,7 +36,7 @@
     margin-bottom: 20px;
     color: getColor('secondaryBrand');
 
-    @include font(700, 14px, 1.14, 0.03em);
+    @include font(14px, 700, 1.14, 0.03em);
 
     text-transform: uppercase;
   }

@@ -9,19 +9,19 @@
   }
 
   &__item {
-    &:not(:last-child) {
-      @media screen and (max-width: $pre_tablet) {
+    @media screen and (max-width: $pre_tablet) {
+      &:not(:last-child) {
         margin-bottom: 30px;
       }
     }
 
     @media screen and (min-width: $tablet) {
-      width: calc((100% - 2 * 30px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
       margin: 15px;
     }
 
     @media screen and (min-width: $desktop) {
-      width: calc((100% - 4 * 30px) / 4);
+      flex-basis: calc((100% - 120px) / 4);
     }
   }
 
@@ -37,7 +37,7 @@
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
-    @include font(700, 14px, 1.14, 0.03em);
+    @include font(14px, 700, 1.14, 0.03em);
 
     text-transform: uppercase;
     color: getColor('mainText');
@@ -50,7 +50,7 @@
   &__text {
     margin: 0;
 
-    @include font(400, 14px, 1.72, 0.03em);
+    @include font(14px, 400, 1.72, 0.03em);
 
     color: getColor('secondaryText');
   }

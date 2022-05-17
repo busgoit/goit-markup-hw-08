@@ -2,26 +2,34 @@
 
 .portfolio__filter-list {
   @include list;
+  @include flexWrap();
+  margin-bottom: 40px;
 
   @media screen and (max-width: $pre_tablet) {
-    @include flexWrap();
+    margin-right: -8px;
+    margin-top: -15px;
+  }
+
+  @media screen and (min-width: $pre_tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    justify-content: center;
     margin-bottom: 50px;
   }
-}
 
-.portfolio__filter-list-item {
-  @media screen and (max-width: $pre_tablet) {
-  }
-}
+  &-item {
+    @media screen and (max-width: $pre_tablet) {
+      margin-right: 8px;
+      margin-top: 15px;
+    }
 
-.portfolio__filter-list-item:not(:last-child) {
-  @media screen and (min-width: $tablet) {
-    margin-right: 8px;
+    &:not(:last-child) {
+      @media screen and (min-width: $tablet) {
+        margin-right: 8px;
+      }
+    }
   }
 }
 

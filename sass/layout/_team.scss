@@ -16,7 +16,6 @@
 
   &__item {
     padding-bottom: 24px;
-    width: 100%;
 
     text-align: center;
 
@@ -32,13 +31,13 @@
     }
 
     @media screen and (min-width: $tablet) and (max-width: $pre_desktop) {
-      width: calc((100% - 2 * 30px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
       margin: 15px;
     }
 
     @media screen and (min-width: $desktop) {
       padding-bottom: 30px;
-      width: calc((100% - 3 * 30px) / 4);
+      // flex-basis: calc((100% - 90px) / 4);
 
       &:not(:last-child) {
         margin-right: 30px;
@@ -55,14 +54,14 @@
     margin-top: 0;
     margin-bottom: 10px;
 
-    @include font(500, 16px, 1.19, 0.03em);
+    @include font(16px, 500, 1.19, 0.03em);
   }
 
   &__position {
     margin-top: 0;
     margin-bottom: 16px;
 
-    @include font(400, 16px, 1.19, 0.03em);
+    @include font(16px, 400, 1.19, 0.03em);
 
     color: getColor('secondaryText');
   }

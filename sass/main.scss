@@ -11,10 +11,10 @@
 /* 
 =========== стили шапки 
 */
-// @import './layout/header';
+@import './layout/header';
 @import './components/logo';
-// @import './components/site-nav';
-// @import './components/header-contacts';
+@import './components/site-nav';
+@import './components/header-contacts';
 /* 
 =========== стили героя
 */
@@ -55,5 +55,5 @@
 =========== портфолио
 */
 @import './layout/portfolio';
-// @import './components/portfolio-filter-btn';
+@import './components/portfolio-filter-btn';
 @import './components/portfolio-project-card';

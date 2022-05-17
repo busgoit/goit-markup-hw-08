@@ -1,5 +1,5 @@
 .footer__address {
-  @include font(400, 14px, 1.72, 0.03em);
+  @include font(14px, 400, 1.72, 0.03em);
 
   @media screen and (max-width: $pre_tablet) {
     margin-bottom: 60px;

@@ -26,9 +26,9 @@
   flex-wrap: wrap;
 }
 
-@mixin font($fw, $fs, $lh, $ls) {
-  font-weight: $fw;
+@mixin font($fs, $fw, $lh, $ls) {
   font-size: $fs;
+  font-weight: $fw;
   line-height: $lh;
   letter-spacing: $ls;
 }

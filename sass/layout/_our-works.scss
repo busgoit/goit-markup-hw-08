@@ -13,6 +13,7 @@
 
     &__item {
       position: relative;
+      // flex-basis: calc((100% - 60px) / 3);
 
       &:not(:last-child) {
         margin-right: 30px;
@@ -28,7 +29,7 @@
       padding: 27px 0;
       width: 100%;
 
-      @include font(700, 14px, 1.14, 0.03em);
+      @include font(14px, 700, 1.14, 0.03em);
       text-align: center;
       text-transform: uppercase;
 

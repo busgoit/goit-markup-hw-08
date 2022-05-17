@@ -3,11 +3,11 @@
     margin-top: 0;
     margin-bottom: 12px;
 
-    @include font(700, 20px, 1.5, 0.03em);
+    @include font(20px, 700, 1.5, 0.03em);
     text-align: center;
 
     @media screen and (min-width: $desktop) {
-      @include font(700, 20px, 1.15, 0.03em);
+      line-height: 23px;
     }
   }
 
@@ -34,7 +34,7 @@
   &__label {
     margin-bottom: 4px;
 
-    @include font(400, 12px, 1.17, 0.01em);
+    @include font(12px, 400, 1.17, 0.01em);
 
     color: getColor('secondaryText');
   }
@@ -98,7 +98,7 @@
     }
 
     &::placeholder {
-      @include font(400, 12px, 1.17, 0.01em);
+      @include font(12px, 400, 1.17, 0.01em);
 
       color: getColor('placeholderText');
     }
@@ -112,14 +112,14 @@
     display: flex;
     align-items: center;
 
-    @include font(400, 12px, 1.17, 0.03em);
+    @include font(12px, 400, 1.17, 0.03em);
 
     color: getColor('secondaryText');
 
     cursor: pointer;
 
     @media screen and (min-width: $desktop) {
-      @include font(400, 14px, 1.72, 0.03em);
+      @include font(14px, 400, 1.72, 0.03em);
     }
   }
 
@@ -146,11 +146,23 @@
     fill: getColor('secondaryBrand');
   }
 
+  &__policy-text {
+    margin: 0;
+
+    @media screen and (max-width: 480px) {
+      font-size: 2.5vw;
+    }
+  }
+
   &__policy-link {
     @include link;
     margin-left: 3px;
     color: getColor('brand');
     text-decoration: underline;
+
+    @media screen and (max-width: 480px) {
+      font-size: 2.5vw;
+    }
   }
 }
 
@@ -161,7 +173,7 @@
   width: 200px;
   height: 50px;
 
-  @include font(700, 16px, 1.88, 0.06em);
+  @include font(16px, 700, 1.88, 0.06em);
 
   color: getColor('secondaryBrand');
   background: getColor('brand');
