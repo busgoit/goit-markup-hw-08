@@ -1,6 +1,6 @@
 .project-card {
   display: block;
-  max-width: 450px;
+  // max-width: 450px;
 
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -53,6 +53,8 @@
 
 .project-link {
   @include link;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay-card-box {
@@ -98,6 +100,7 @@
 }
 
 .project-card-notify {
+  flex-grow: 1;
   padding: 20px 24px;
 }
 
