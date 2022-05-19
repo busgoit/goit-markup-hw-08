@@ -451,13 +451,18 @@ body.mob-menu-opened {
 .site-nav__link--current::after {
   content: "";
   position: absolute;
-  bottom: -33px;
+  bottom: -37px;
   left: 0;
   display: block;
   height: 4px;
   width: 100%;
   border-radius: 2px;
   background-color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .site-nav__link--current::after {
+    bottom: -32px;
+  }
 }
 
 .header__contacts-list {
