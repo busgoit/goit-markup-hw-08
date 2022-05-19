@@ -20,6 +20,15 @@
           <a href="./index.html" title="Главная страница WebStudio" class="logo">
             <span class="logo__accent">Web</span>Studio
           </a>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+          </ul>
           <button
             type="button"
             class="mob-menu__btn mob-menu__btn--open"
@@ -27,19 +36,10 @@
             aria-controls="mob-menu"
           >
             <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-              <use class="mob-menu__icon" href="./images/icons.svg#mob-menu__icon-open"></use>
+              <use class="mob-menu__btn-icon" href="./images/icons.svg#mob-menu__icon-open"></use>
             </svg>
           </button>
         </nav>
-        <ul class="site-nav">
-          <li class="site-nav__item">
-            <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-          </li>
-          <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
-        </ul>
         <ul class="header__contacts-list">
           <li class="header__contacts-item">
             <a href="mailto:info@devstudio.com" class="header__contacts-link">
@@ -58,31 +58,38 @@
             </a>
           </li>
         </ul>
-        <!-- mob-menu -->
-        <div class="mob-menu">
-          <button
-            type="button"
-            class="mob-menu__btn mob-menu__btn--close"
-            aria-expanded="false"
-            aria-controls="mob-menu__nav-box"
-          >
-            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-              <use class="mob-menu__icon" href="./images/icons.svg#mob-menu__icon-close"></use>
-            </svg>
-          </button>
-          <ul class="mob-menu__nav">
-            <li class="mob-menu__nav-item">
-              <a href="./index.html" class="mob-menu__nav-link mob-menu__nav-link--current">
-                Студия
-              </a>
-            </li>
-            <li class="mob-menu__nav-item">
-              <a href="./portfolio.html" class="mob-menu__nav-link">Портфолио</a>
-            </li>
-            <li class="mob-menu__nav-item">
-              <a href="#" class="mob-menu__nav-link">Контакты</a>
-            </li>
-          </ul>
+      </div>
+      <!-- mob-menu -->
+      <div class="mob-menu">
+        <div class="container">
+          <nav class="mob-menu__nav">
+            <ul class="mob-menu__nav-list">
+              <li class="mob-menu__nav-item">
+                <a href="./index.html" class="mob-menu__nav-link mob-menu__nav-link--current">
+                  Студия
+                </a>
+              </li>
+              <li class="mob-menu__nav-item">
+                <a href="./portfolio.html" class="mob-menu__nav-link">Портфолио</a>
+              </li>
+              <li class="mob-menu__nav-item">
+                <a href="#" class="mob-menu__nav-link">Контакты</a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="mob-menu__btn mob-menu__btn--close"
+              aria-expanded="false"
+              aria-controls="mob-menu__nav-box"
+            >
+              <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                <use
+                  class="mob-menu__btn-icon"
+                  href="./images/icons.svg#mob-menu__icon-close"
+                ></use>
+              </svg>
+            </button>
+          </nav>
           <div class="mob-menu__bottom">
             <ul class="mob-menu__contacts-list">
               <li class="mob-menu__contacts-item">
@@ -93,24 +100,24 @@
               <li class="mob-menu__contacts-item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="mob-menu__contacts-link mob-menu__contacts-semail"
+                  class="mob-menu__contacts-link mob-menu__contacts-email"
                 >
                   info@devstudio.com
                 </a>
               </li>
             </ul>
             <ul class="mob-menu__soc-list">
-              <li class="mob-menu__soc-list-item">
-                <a href="#" target="_blank" class="mob-menu__soc-list-link">Instagram</a>
+              <li class="mob-menu__soc-item">
+                <a href="#" target="_blank" class="mob-menu__soc-link">Instagram</a>
               </li>
-              <li class="mob-menu__soc-list-item">
-                <a href="#" target="_blank" class="mob-menu__soc-list-link">Twitter</a>
+              <li class="mob-menu__soc-item">
+                <a href="#" target="_blank" class="mob-menu__soc-link">Twitter</a>
               </li>
-              <li class="mob-menu__soc-list-item">
-                <a href="#" target="_blank" class="mob-menu__soc-list-link">Facebook</a>
+              <li class="mob-menu__soc-item">
+                <a href="#" target="_blank" class="mob-menu__soc-link">Facebook</a>
               </li>
-              <li class="mob-menu__soc-list-item">
-                <a href="#" target="_blank" class="mob-menu__soc-list-link">Linkedin</a>
+              <li class="mob-menu__soc-item">
+                <a href="#" target="_blank" class="mob-menu__soc-link">Linkedin</a>
               </li>
             </ul>
           </div>
