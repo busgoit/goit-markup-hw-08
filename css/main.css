@@ -290,12 +290,16 @@ body.modal-open {
   overflow: hidden;
 }
 
-.mob-menu-closed {
-  display: none;
-}
-
 body.mob-menu-opened {
   overflow: hidden;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .visually-hidden {
@@ -554,7 +558,6 @@ body.mob-menu-opened {
   width: 100vw;
   z-index: 5;
   padding: 48px 40px;
-  overflow: auto;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.18;
@@ -574,6 +577,7 @@ body.mob-menu-opened {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: auto;
 }
 
 .mob-menu__btn {

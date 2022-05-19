@@ -1,18 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
+  <header class="header">
+    <div class="header__container container">
+      <nav class="header__nav">
+        <a href="./index.html" title="Главная страница WebStudio" class="logo">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a href="./index.html" class="site-nav__link">Студия</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
+          </li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+        </ul>
+        <button
+          type="button"
+          class="mob-menu__btn mob-menu__btn--open"
+          aria-expanded="false"
+          aria-controls="mob-menu"
+        >
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="mob-menu__btn-icon" href="./images/icons.svg#mob-menu__icon-open"></use>
+          </svg>
+        </button>
+      </nav>
+      <ul class="header__contacts-list">
+        <li class="header__contacts-item">
+          <a href="mailto:info@devstudio.com" class="header__contacts-link">
+            <svg class="header__contacts-icon" width="16" height="12">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="header__contacts-item">
+          <a href="tel:+380961111111" class="header__contacts-link">
+            <svg class="header__contacts-icon" width="10" height="16">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mob-menu -->
+    <div class="mob-menu is-hidden">
+      <div class="container">
+        <nav class="mob-menu__nav">
+          <ul class="mob-menu__nav-list">
+            <li class="mob-menu__nav-item">
+              <a href="./index.html" class="mob-menu__nav-link"> Студия </a>
+            </li>
+            <li class="mob-menu__nav-item">
+              <a href="./portfolio.html" class="mob-menu__nav-link mob-menu__nav-link--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu__nav-item">
+              <a href="#" class="mob-menu__nav-link">Контакты</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="mob-menu__btn mob-menu__btn--close"
+            aria-expanded="true"
+            aria-controls="mob-menu"
+          >
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              <use class="mob-menu__btn-icon" href="./images/icons.svg#mob-menu__icon-close"></use>
+            </svg>
+          </button>
+        </nav>
+        <div class="mob-menu__bottom">
+          <ul class="mob-menu__contacts-list">
+            <li class="mob-menu__contacts-item">
+              <a href="tel:+380961111111" class="mob-menu__contacts-link mob-menu__contacts-tel">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mob-menu__contacts-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-menu__contacts-link mob-menu__contacts-email"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-menu__soc-list">
+            <li class="mob-menu__soc-item">
+              <a href="#" target="_blank" class="mob-menu__soc-link">Instagram</a>
+            </li>
+            <li class="mob-menu__soc-item">
+              <a href="#" target="_blank" class="mob-menu__soc-link">Twitter</a>
+            </li>
+            <li class="mob-menu__soc-item">
+              <a href="#" target="_blank" class="mob-menu__soc-link">Facebook</a>
+            </li>
+            <li class="mob-menu__soc-item">
+              <a href="#" target="_blank" class="mob-menu__soc-link">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  >
   <body>
     <header class="header">
       <div class="header__container container">
