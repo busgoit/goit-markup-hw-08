@@ -319,7 +319,6 @@ body.mob-menu-opened {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  outline: 2px solid greenyellow;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -332,7 +331,6 @@ body.mob-menu-opened {
   width: 95vw;
   margin: 0 auto;
   padding: 0 15px;
-  border: 2px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
