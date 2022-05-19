@@ -5,6 +5,8 @@
 // @import './utils/placeholders';
 @import './utils/mixins';
 @import './layout/body';
+@import './utils/modal-open';
+@import './utils/mob-menu-closed';
 @import './base/visually-hidden';
 @import './layout/section';
 @import './layout/container';
@@ -15,6 +17,7 @@
 @import './components/logo';
 @import './components/header-nav';
 @import './components/header-contacts';
+@import './components/header-mob-menu';
 /* 
 =========== стили героя
 */
