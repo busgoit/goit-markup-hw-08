@@ -9,7 +9,6 @@
 
     overflow: auto;
   }
-  // display: none;
 
   position: fixed;
 
@@ -25,10 +24,6 @@
   @include font(40px, 500, 1.18, 0.02em);
 
   background-color: getColor(mainBgr);
-
-  // &.is-open {
-  //   display: block;
-  // }
 }
 
 .mob-menu__btn {
@@ -64,6 +59,10 @@
 .mob-menu__nav {
   &-list {
     @include list;
+
+    @media screen and (max-width: $pre-mobile) {
+      font-size: calc(30px + 1vw);
+    }
   }
 
   &-item:not(:last-child) {
@@ -90,10 +89,18 @@
   &-list {
     @include list;
     margin-bottom: 64px;
+
+    @media screen and (max-width: $pre-mobile) {
+      margin-bottom: 50px;
+    }
   }
 
   &-item:not(:last-child) {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: $pre-mobile) {
+      margin-bottom: 15px;
+    }
   }
 
   &-link {
@@ -110,6 +117,10 @@
   &-tel {
     font-size: 40px;
     color: getColor('brand');
+
+    @media screen and (max-width: $pre-mobile) {
+      font-size: calc(20px + 0.5vw);
+    }
   }
 
   &-email {
@@ -117,6 +128,10 @@
     line-height: 1.17;
 
     color: getColor('secondaryText');
+
+    @media screen and (max-width: $pre-mobile) {
+      font-size: calc(18px + 0.5vw);
+    }
   }
 }
 
@@ -124,13 +139,19 @@
   &-list {
     @include list;
     @include centeredFlex;
-    // display: flex;
-    // align-items: center;
+
+    @media screen and (max-width: $pre-mobile) {
+      flex-wrap: wrap;
+    }
 
     font-size: 18px;
     line-height: 1.22;
 
     color: getColor('brand');
+
+    @media screen and (max-width: $pre-mobile) {
+      font-size: calc(14px + 0.5vw);
+    }
   }
 
   &-item:not(:last-child) {
