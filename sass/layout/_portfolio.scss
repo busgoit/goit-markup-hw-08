@@ -10,12 +10,12 @@
     margin-top: -15px;
   }
 
-  @media screen and (min-width: $pre_tablet) {
+  @media screen and (min-width: $tablet) {
     justify-content: center;
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
   }
 
