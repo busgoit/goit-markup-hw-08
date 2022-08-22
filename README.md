@@ -1,9 +1,5 @@
-# goit-markup-hw-08
+Цей проект був виконаний під час вивчення курсу з верстки.
 
-goit-markup-hw-08
+Задача – розробка адаптивної Mobile First верстки сайту.
 
-.element { /_ Базовые стили _/ }
-
-@media screen and (min-width: ширина-планшета) { .element { /_ Стили планшета _/ } }
-
-@media screen and (min-width: ширина-десктопа) { .element { /_ Стили десктопа _/ } }
+Макет - https://www.figma.com/file/oTYBECAN79dXy19hzWObO4/Web-Studio-(Version-2.1)?node-id=0%3A1
